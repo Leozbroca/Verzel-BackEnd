@@ -1,26 +1,21 @@
-export enum USER_ROLES {
-    ADMIN = "ADMIN",
-    NORMAL = "NORMAL",
-  }
-
 export interface authenticationData {
     id: string;
-    role: USER_ROLES;
+    role: string;
   }
 
   export interface user {
     id: string;
+    nome: string;
     email: string;
-    name: string;
-    password: string;
-    role: USER_ROLES;
+    senha: string;
   }
 
   export interface car {
-    id:string;
     nome: string;
+    email: string;
     marca: string;
     modelo: string;
+    ano: number;
     foto: string
   }
   

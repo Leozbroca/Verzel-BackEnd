@@ -9,7 +9,7 @@ class Authenticator {
     const token = sign(payload, process.env.JWT_SECRET as string, {
       expiresIn: process.env.EXPIRES_IN,
     });
-
+    
     return token;
   };
 
@@ -19,12 +19,13 @@ class Authenticator {
         token,
         process.env.JWT_SECRET as string
       ) as JwtPayload;
+      
       return {
         id: tokenData.id,
         role: tokenData.role,
       };
     } catch (error:any) {
-      throw new Error("Error")
+      throw new Error("Invalid Token")
     }
   };
 }

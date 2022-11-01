@@ -1,0 +1,51 @@
+### Cadastro de usuário 
+POST http://localhost:3003/signup 
+Content-Type: application/json
+
+{
+"nome":"Igor", "email":"igor@gmail.com", "senha":"123456"
+}
+
+### Login 
+POST http://localhost:3003/login 
+Content-Type: application/json
+
+{
+"email":"leozbroca@gmail.com", "senha":"123456"
+}
+
+### Cadastro de carros
+POST http://localhost:3003/signupCar
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNkMTI4NWFkLTIyOWEtNGI4YS04ZDEwLTgzMmJiN2I5Mjk5YSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2NzI2MzMwMSwiZXhwIjoxNjY3MzQ5NzAxfQ.JFArpaND8VDAAL5jCG5Wqs7K7iZYRXlUJsBbcVAPDQo
+
+{
+"nome":"Fork Ka lalala", "marca":"Ford", "modelo":"Ka", "ano": "2020", "foto":"foto"
+}
+
+### Editar carro
+PUT http://localhost:3003/editCar/2
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNkMTI4NWFkLTIyOWEtNGI4YS04ZDEwLTgzMmJiN2I5Mjk5YSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2NzI2MzMwMSwiZXhwIjoxNjY3MzQ5NzAxfQ.JFArpaND8VDAAL5jCG5Wqs7K7iZYRXlUJsBbcVAPDQo
+
+{
+"marca":"TESLA", "ano":"1500"
+}
+
+
+### Deletar carro
+DELETE http://localhost:3003/deleteCar/1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNkMTI4NWFkLTIyOWEtNGI4YS04ZDEwLTgzMmJiN2I5Mjk5YSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2NzI2MzMwMSwiZXhwIjoxNjY3MzQ5NzAxfQ.JFArpaND8VDAAL5jCG5Wqs7K7iZYRXlUJsBbcVAPDQo
+
+### Pegar informações de todos os carros
+GET http://localhost:3003/allCars
+Content-Type: application/json
+
+### Pegar informações de carros do usuário
+GET http://localhost:3003/getMyCars
+Content-Type: application/json
+
+{
+"email":"igor@gmail.com"
+}
