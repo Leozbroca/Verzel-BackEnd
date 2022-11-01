@@ -39,7 +39,7 @@ Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNkMTI4NWFkLTIyOWEtNGI4YS04ZDEwLTgzMmJiN2I5Mjk5YSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2NzI2MzMwMSwiZXhwIjoxNjY3MzQ5NzAxfQ.JFArpaND8VDAAL5jCG5Wqs7K7iZYRXlUJsBbcVAPDQo
 
 ### Pegar informações de todos os carros
-GET http://localhost:3003/allCars
+GET http://localhost:3003//allCars
 Content-Type: application/json
 
 ### Pegar informações de carros do usuário
