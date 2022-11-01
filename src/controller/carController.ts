@@ -80,8 +80,8 @@ class CarController {
 
   async getCarsByUser(req: Request, res: Response): Promise<void> {
     try {
-        const { email } = req.body;
-      const result = await carBussiness.getCarsByUser(email);
+        const { id } = req.body;
+      const result = await carBussiness.getCarsByUser(id);
       
       res.status(200).send({ result });
     } catch (error: any) {

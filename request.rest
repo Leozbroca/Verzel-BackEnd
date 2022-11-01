@@ -20,7 +20,7 @@ Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImUzYjkyZjBmLWRjM2MtNDNjMy1hZWIyLWM5MzVmZTExZmZlNiIsImlhdCI6MTY2NzMwMjM0NSwiZXhwIjoxNjY3Mzg4NzQ1fQ.L4NcDuyYVN5vceyzSccWuGK_eSK3mlYQkjE7pl6DBn4
 
 {
-"nome":"carro", "marca":"citroen", "modelo":"1233", "ano": "2022", "foto":"foto"
+"nome":"carrdo", "marca":"citroen", "modelo":"1233", "ano": "2022", "foto":"foto"
 }
 
 ### Editar carro

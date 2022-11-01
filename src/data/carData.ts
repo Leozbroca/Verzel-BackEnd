@@ -10,7 +10,7 @@ class CarDatabase extends BaseDatabase {
           await this.getConnection()
             .insert({
               nome:newCar.nome,
-              email_seller:newCar.email,
+              id_seller:newCar.id,
               marca:newCar.marca,
               modelo:newCar.modelo,
               ano:newCar.ano,
@@ -81,12 +81,12 @@ class CarDatabase extends BaseDatabase {
         }
       }
 
-      public async getCarsByUser(email: string): Promise<any> {
+      public async getCarsByUser(id: string): Promise<any> {
         try {
           const result = await this.getConnection()
             .select()
             .from(CarDatabase.TABLE_NAME)
-            .where({ email_seller: email });
+            .where({ id_seller: id });
     
           return result;
         } catch (error: any) {

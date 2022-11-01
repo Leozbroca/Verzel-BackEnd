@@ -35,11 +35,11 @@ class CarBussiness {
       throw new InvalidToken();
     } else {
       const [user] = await userDatabase.searchProfileById(authenticationData.id);
-      const email = user.email
+      const id = user.id
    
       const newCar: car = {
         nome,
-        email,
+        id,
         marca,
         modelo,
         ano,
@@ -128,8 +128,8 @@ class CarBussiness {
     return cars;
   }
 
-  async getCarsByUser(email:string) {
-    const cars = await carDatabase.getCarsByUser(email);
+  async getCarsByUser(id:string) {
+    const cars = await carDatabase.getCarsByUser(id);
     if (!cars) {
       throw new CarsNotFound();
     }
