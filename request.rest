@@ -1,5 +1,5 @@
 ### Cadastro de usuário 
-POST http://localhost:3003/signup 
+POST https://projectverzel.herokuapp.com/signup 
 Content-Type: application/json
 
 {
@@ -7,7 +7,7 @@ Content-Type: application/json
 }
 
 ### Login 
-POST http://localhost:3003/login 
+POST https://projectverzel.herokuapp.com/login 
 Content-Type: application/json
 
 {
@@ -15,16 +15,16 @@ Content-Type: application/json
 }
 
 ### Cadastro de carros
-POST http://localhost:3003/signupCar
+POST https://projectverzel.herokuapp.com/signupCar
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNkMTI4NWFkLTIyOWEtNGI4YS04ZDEwLTgzMmJiN2I5Mjk5YSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2NzI2MzMwMSwiZXhwIjoxNjY3MzQ5NzAxfQ.JFArpaND8VDAAL5jCG5Wqs7K7iZYRXlUJsBbcVAPDQo
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImUzYjkyZjBmLWRjM2MtNDNjMy1hZWIyLWM5MzVmZTExZmZlNiIsImlhdCI6MTY2NzMwMjM0NSwiZXhwIjoxNjY3Mzg4NzQ1fQ.L4NcDuyYVN5vceyzSccWuGK_eSK3mlYQkjE7pl6DBn4
 
 {
-"nome":"Fork Ka lalala", "marca":"Ford", "modelo":"Ka", "ano": "2020", "foto":"foto"
+"nome":"carro", "marca":"citroen", "modelo":"1233", "ano": "2022", "foto":"foto"
 }
 
 ### Editar carro
-PUT http://localhost:3003/editCar/2
+PUT https://projectverzel.herokuapp.com/editCar/2
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNkMTI4NWFkLTIyOWEtNGI4YS04ZDEwLTgzMmJiN2I5Mjk5YSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2NzI2MzMwMSwiZXhwIjoxNjY3MzQ5NzAxfQ.JFArpaND8VDAAL5jCG5Wqs7K7iZYRXlUJsBbcVAPDQo
 
@@ -39,11 +39,11 @@ Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNkMTI4NWFkLTIyOWEtNGI4YS04ZDEwLTgzMmJiN2I5Mjk5YSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2NzI2MzMwMSwiZXhwIjoxNjY3MzQ5NzAxfQ.JFArpaND8VDAAL5jCG5Wqs7K7iZYRXlUJsBbcVAPDQo
 
 ### Pegar informações de todos os carros
-GET http://localhost:3003//allCars
+GET https://projectverzel.herokuapp.com/allCars
 Content-Type: application/json
 
 ### Pegar informações de carros do usuário
-GET http://localhost:3003/getMyCars
+GET https://projectverzel.herokuapp.com/getMyCars
 Content-Type: application/json
 
 {
